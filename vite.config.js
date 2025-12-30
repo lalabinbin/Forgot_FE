@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
-import { VitePWA } from 'vite-plugin-pwa' // 1. Import plugin
+import { VitePWA } from "vite-plugin-pwa"; // 1. Import plugin
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
@@ -12,9 +12,9 @@ export default defineConfig({
       registerType: "autoUpdate", // Tự động cập nhật khi có nội dung mới
       includeAssets: ["favicon.ico", "apple-touch-icon.png", "masked-icon.svg"],
       manifest: {
-        name: "Tên Ứng Dụng Của Bạn",
-        short_name: "AppShortName",
-        description: "Mô tả ngắn về ứng dụng React PWA",
+        name: "ForgotPass",
+        short_name: "ForgotPass",
+        description: "ForgotPass React PWA",
         theme_color: "#ffffff",
         icons: [
           {

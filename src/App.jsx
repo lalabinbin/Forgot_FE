@@ -11,10 +11,14 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
+          {/* /login replace home page */}
           <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route path="/forgot-password" element={<ForgotPass />} />
-          <Route path="/confirm-new-password/:token" element={<ConfirmNewPass />} />
-          <Route path="/" element={<Home />} />
+          <Route
+            path="/confirm-new-password/:token"
+            element={<ConfirmNewPass />}
+          />
         </Routes>
       </BrowserRouter>
       <Toaster position="top-center" reverseOrder={false} />
